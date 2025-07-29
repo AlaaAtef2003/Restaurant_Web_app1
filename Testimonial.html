@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restoran - BBQ Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        .hh {
+            color: var(--light-color);
+        font-family: "Nunito", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <i class="fa-solid fa-utensils fs-3 me-2" style="color: var(--yel-color);"></i>
+      <a class="navbar-brand fw-bold fs-3" style="color: var(--yel-color);" href="#">Restoran</a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="Service.html">SERVICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PAGES</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="booking.html">booking</a></li>
+            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="Home" class="hero  d-flex flex-column justify-content-center  align-items-center px-5 py-5 text-center ">
+  <div class="text-white mb-4 mb-lg-0 col-lg-6">
+    <header class="animate__animated animate__fadeInDown display-4 fw-bold hh">
+    <h1>Testimonial</h1>
+    </header>
+    
+     <nav aria-label="breadcrumb">
+  <ol class="breadcrumb text-center justify-content-center fs-3 text">
+    <li class="breadcrumb-item "><a href="index.html">HOME &nbsp;</a>/</li>
+    <li class="breadcrumb-item "><a href="#">PAGES</a>&nbsp;/</li>
+    <li class="breadcrumb-item  text-white " aria-current="page">Testimonial</li>
+  </ol>
+</nav>
+  </div>
+</section>
+
+
+
+<section id="Testimonial"class=" about px-3 py-5 text-center text-lg-start mt-0">
+  <h4 class="text-center text fs-2">Testimonial</h4>
+  <h5 class="text-center fs-1 mb-5">Our Clients Say!!!</h5>
+<!-- Bootstrap Carousel with Cards -->
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center gap-4 flex-wrap">
+
+        <!-- Card 1 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start" style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Best BBQ in town! The ribs are incredibly tender and the atmosphere is perfect for family dining. Highly recommend!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 1" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">John Smith</h5>
+              <p class="card-text">Food Blogger</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Amazing service and delicious food! The pulled pork sandwich exceeded my expectations.</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 2" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Emily Davis</h5>
+              <p class="card-text">Marketing Director</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Outstanding BBQ experience! The brisket melts in your mouth and the staff is incredibly friendly and attentive.</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Robert Brown</h5>
+              <p class="card-text">Business Owner</p>
+            </div>
+          </div>
+        </div>
+         
+        <!-- Card 4 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start" style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Perfect place for special occasions! Great food, wonderful ambiance, and excellent customer service. Five stars!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 4" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Lisa Anderson</h5>
+              <p class="card-text">Teacher</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center gap-4 flex-wrap">
+
+        <!-- Card 3 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>The smoky flavors are incredible! You can taste the authentic BBQ techniques in every bite. Absolutely delicious!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Mark Johnson</h5>
+              <p class="card-text">Chef</p>
+            </div>
+          </div>
+        </div>
+         
+        <!-- Card 4 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Fast delivery and hot food! The online ordering system is easy to use and the food arrives perfectly packaged.</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 4" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Jennifer Wilson</h5>
+              <p class="card-text">Nurse</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Family-friendly atmosphere with generous portions. The kids love the chicken wings and we love everything else!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 1" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Tom Martinez</h5>
+              <p class="card-text">Engineer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start" style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Consistently excellent food and service. Been coming here for years and they never disappoint. Truly the best!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 2" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Maria Garcia</h5>
+              <p class="card-text">Accountant</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<footer class="  text-light">
+  <div class="container py-2">
+    <div class="row text-center text-md-start">
+      <!-- About / Logo -->
+      <div class="col-md-4 mb-4">
+        <h4 class="text-warning fw-bold">Restoran</h4>
+        <p class="small">Experience the finest flavors crafted by our master chefs. We serve food with passion and elegance.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, Cairo, Egypt</p>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i>+20 100 123 4567</p>
+        <p class="mb-1"><i class="fas fa-envelope me-2"></i>contact@restoran.com</p>
+      </div>
+
+      <!-- Social / Developer -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Follow Us</h5>
+        <div class="mb-3">
+          <a href="https://github.com/AlaaAtef2003" class="text-light me-3 fs-5" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/alaa-atef-7bb189239" class="text-light fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="small">Developed by <a href="#" class="text-warning text-decoration-underline">Alaa Atef</a></p>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <p class="text-center small mb-0">© 2025 Restoran. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

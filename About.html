@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restoran - BBQ Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS --> 
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <i class="fa-solid fa-utensils fs-3 me-2" style="color: var(--yel-color);"></i>
+      <a class="navbar-brand fw-bold fs-3" style="color: var(--yel-color);" href="#">Restoran</a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="Service.html">SERVICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PAGES</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="booking.html">booking</a></li>
+            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="Home" class="hero  d-flex flex-column justify-content-center  align-items-center px-5 py-5 text-center ">
+  <div class="text-white mb-4 mb-lg-0 col-lg-6">
+    <header class="animate__animated animate__fadeInDown display-4 fw-bold hh">
+    <h1 >About Us</h1>
+    </header>
+    
+     <nav aria-label="breadcrumb">
+  <ol class="breadcrumb text-center justify-content-center fs-3 text">
+    <li class="breadcrumb-item "><a href="index.html">HOME &nbsp;</a>/</li>
+    <li class="breadcrumb-item "><a href="#">PAGES</a>&nbsp;/</li>
+    <li class="breadcrumb-item  text-white " aria-current="page">ABOUT</li>
+  </ol>
+</nav>
+  </div>
+</section>
+
+<section id="ABOUT" class="about px-3 py-5 text-center text-lg-start mt-0">
+  <div class="row  ">
+    <!-- الصور -->
+    <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+      <div class="row g-3">
+        <div class="col-6 p-2 ">
+           <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+        </div>
+        <div class="col-6   ">
+         <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%; visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+        </div>
+        <div class="col-6 p-2">
+          <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg" style="margin-left: 25%; visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
+        </div>
+        <div class="col-6 p-2">
+          <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg" style="visibility: visible; animation-delay: 0.7s; animation-name: zoomIn;">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class=" col-lg-6 d-flex flex-column  align-items-start justify-content-center mt-5" >
+      <h2 class="text" >About Us</h2>
+      <h3 class="fs-1 fw-bold">Welcome to 
+      <i class="fa-solid fa-utensils fs-1 me-2 text" ></i>
+      <a class="navbar-brand fw-bold fs-1" href="#">Restoran</a>
+      </h3>
+      <p class="fs-4">
+        Since 1995, Restoran has been serving authentic BBQ with a passion for quality and tradition. Our slow-cooked meats and signature sauces have made us a beloved destination for food lovers.
+      </p>
+      <p class="fs-4">
+        We pride ourselves on using only the finest ingredients and time-honored cooking techniques. Every dish is prepared with care by our master chefs who understand that great BBQ takes time, patience, and expertise.
+      </p>
+       <button class="btn  mx-lg-0 mx-auto d-block book w-25" style="background-color: var(--yel-color);">READ MORE</button>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="  text-light">
+  <div class="container py-2">
+    <div class="row text-center text-md-start">
+      <!-- About / Logo -->
+      <div class="col-md-4 mb-4">
+        <h4 class="text-warning fw-bold">Restoran</h4>
+        <p class="small">Experience the finest flavors crafted by our master chefs. We serve food with passion and elegance.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, Cairo, Egypt</p>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i>+20 100 123 4567</p>
+        <p class="mb-1"><i class="fas fa-envelope me-2"></i>contact@restoran.com</p>
+      </div>
+
+      <!-- Social / Developer -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Follow Us</h5>
+        <div class="mb-3">
+          <a href="https://github.com/AlaaAtef2003" class="text-light me-3 fs-5" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/alaa-atef-7bb189239" class="text-light fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="small">Developed by <a href="#" class="text-warning text-decoration-underline">Alaa Atef</a></p>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <p class="text-center small mb-0">© 2025 Restoran. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

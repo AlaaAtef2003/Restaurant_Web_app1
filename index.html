@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restoran - BBQ Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <i class="fa-solid fa-utensils fs-3 me-2" style="color: var(--yel-color);"></i>
+      <a class="navbar-brand fw-bold fs-3" style="color: var(--yel-color);" href="#">Restoran</a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="Service.html">SERVICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PAGES</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="booking.html">booking</a></li>
+            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="Home" class="hero d-flex flex-column flex-lg-row align-items-center justify-content-between px-5 py-5 text-center text-lg-start">
+  <div class="text-white mb-4 mb-lg-0 col-lg-6">
+    <h1 class="fs-1 fst-italic">Enjoy Our <br>Delicious Meal</h1>
+    <p class="fs-5 mt-3">
+      Enjoy authentic Texas BBQ with slow-cooked meats,<br>
+      bold flavors, and true Southern hospitality.
+    </p>
+      <button class="btn  mx-lg-0 mx-auto d-block book" style="background-color: var(--yel-color);">BOOK A TABLE</button>
+  </div>
+  <div class="col-lg-6 text-center">
+    <img src="img/hero.png" alt="Delicious BBQ" class="img-fluid w-75 mt-4 mt-lg-0 img-rotate ">
+  </div>
+</section>
+<section id="SERVICE" class="about px-3 py-3 text-center text-lg-start">
+  <div class="container">
+      <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center shadow cardinfo border-0">
+          <div class="card-body p-10 ">
+            <i class="fa fa-3x fa-user-tie mb-4" ></i>
+            <h5 class="card-title">Master Chefs</h5>
+            <p class="card-text">Our skilled chefs have over 15 years of experience in creating exceptional BBQ dishes with authentic recipes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center  shadow cardinfo border-0">
+          <div class="card-body p-10 ">
+            <i class="fa fa-3x fa-utensils mb-4" ></i>
+            <h5 class="card-title">Quality Food</h5>
+            <p class="card-text">We source the finest cuts of meat and freshest ingredients daily to ensure every meal exceeds your expectations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center  shadow cardinfo border-0 ">
+          <div class="card-body p-10 ">
+            <i class="fa fa-3x fa-cart-plus mb-4"></i>
+            <h5 class="card-title">Online Order</h5>
+            <p class="card-text">Order your favorite BBQ dishes online for pickup or delivery. Fast, convenient, and always delicious.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center shadow cardinfo border-0">
+          <div class="card-body p-10 ">
+            <i class="fa fa-3x fa-headset mb-4" ></i>
+            <h5 class="card-title">24/7 Service</h5>
+            <p class="card-text">Our customer service team is available around the clock to assist with orders, reservations, and inquiries.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="ABOUT" class="about px-3 py-5 text-center text-lg-start mt-0">
+  <div class="row  ">
+    <!-- الصور -->
+    <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+      <div class="row g-3">
+        <div class="col-6 p-2 ">
+           <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+        </div>
+        <div class="col-6   ">
+         <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%; visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+        </div>
+        <div class="col-6 p-2">
+          <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg" style="margin-left: 25%; visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
+        </div>
+        <div class="col-6 p-2">
+          <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg" style="visibility: visible; animation-delay: 0.7s; animation-name: zoomIn;">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class=" col-lg-6 d-flex flex-column  align-items-start justify-content-center mt-5" >
+      <h2 class="text" >About Us</h2>
+      <h3 class="fs-1 fw-bold">Welcome to 
+      <i class="fa-solid fa-utensils fs-1 me-2 text" ></i>
+      <a class="navbar-brand fw-bold fs-1" href="#">Restoran</a>
+      </h3>
+      <p class="fs-4">
+        Since 1995, Restoran has been serving authentic BBQ with a passion for quality and tradition. Our slow-cooked meats and signature sauces have made us a beloved destination for food lovers.
+      </p>
+      <p class="fs-4">
+        We pride ourselves on using only the finest ingredients and time-honored cooking techniques. Every dish is prepared with care by our master chefs who understand that great BBQ takes time, patience, and expertise.
+      </p>
+       <button class="btn  mx-lg-0 mx-auto d-block book w-25" style="background-color: var(--yel-color);">READ MORE</button>
+    </div>
+  </div>
+</section>
+<section id="MENU" class="about px-3 py-5 text-center text-lg-start mt-0">
+  <h4 class="text-center text">Food Menu</h4>
+  <h2 class="fs-1 fw-bold text-center">Most Popular Items</h2>
+
+  <div class="container mt-4">
+    <div class="row gy-4">
+
+      <!-- Menu Item -->
+      <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-1.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Chicken Burger</h5>
+            <span class="text">$15.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Juicy grilled chicken breast with fresh lettuce, tomato, and our special BBQ sauce</p>
+        </div>
+      </div>
+
+      <!-- Copy & Paste below this block for more items -->
+      <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-2.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Chicken Pizza</h5>
+            <span class="text">$18.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Wood-fired pizza topped with smoky BBQ chicken, red onions, and mozzarella cheese</p>
+        </div>
+      </div>
+
+  <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-3.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Grilled Sandwich</h5>
+            <span class="text">$12.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Perfectly grilled sandwich with premium meats, cheese, and fresh vegetables</p>
+        </div>
+      </div>
+  
+      <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-4.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>BBQ Ribs</h5>
+            <span class="text">$22.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Tender fall-off-the-bone ribs slow-cooked for 12 hours with our signature dry rub</p>
+        </div>
+    </div>
+    
+          <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-5.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Smoked Brisket</h5>
+            <span class="text">$24.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Texas-style smoked brisket with perfect bark and juicy interior, served with pickles</p>
+        </div>
+        
+           </div>
+        <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-6.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Pulled Pork</h5>
+            <span class="text">$19.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Slow-cooked pulled pork shoulder served with coleslaw and our tangy BBQ sauce</p>
+        </div>
+          </div>
+             <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-7.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>BBQ Combo Platter</h5>
+            <span class="text">$28.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">A generous selection of ribs, brisket, and pulled pork with two sides of your choice</p>
+        </div>
+          </div>
+        <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-8.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Smoked Wings</h5>
+            <span class="text">$16.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Crispy smoked chicken wings tossed in your choice of buffalo, BBQ, or honey garlic sauce</p>
+        </div>
+          </div>
+</section>
+ <section id="booking" class="about  text-lg-start mt-0 booking">
+  <div class="d-flex flex-lg-row flex-column  p-0 mb-0 mt-0 me-0 ms-0">
+    
+    <div class="col-lg-6">
+      <img src="img/video.jpg" class="w-100 h-100" alt="Booking Image">
+    </div>
+
+    <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center text-center px-4">
+      <h4 class="text text-start w-100 py-2">Reservation</h4>
+<h5 class="text-start w-100 mb-4">Book A Table Online</h5>
+
+
+      <div class="container mt-1">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <form >
+            <div class="input-group-custom mt-0">
+              <input required type="text" name="name" autocomplete="off" class="input" />
+              <label class="user-label">Enter Your Name</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group-custom">
+              <input type="email" required class="input" />
+              <label class="user-label">Enter Your Email</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="input-group-custom">
+              <input type="text" required class="input" />
+              <label class="user-label">Enter Phone Number</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group-custom">
+              <input type="number" required class="input" />
+              <label class="user-label">No of Guests</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="input-group-custom">
+              <input type="date" required class="input" />
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group-custom">
+              <input type="time" required class="input" />
+              
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn book w-50 mt-3 mb-3" style="background-color: var(--yel-color);">BOOK NOW</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="team" class="about px-3 py-5 text-center text-lg-start mt-0">
+  <h4 class="text-center text fs-2">Team Members</h4>
+  <h5 class="text-center fs-1 mb-5">Our Master Chefs</h5>
+
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-6 col-lg-3 team1">
+      <div class="card p-4 shadow border-0 h-100">
+        <img src="img/team-1.jpg" class="img-fluid team" alt="Chef 1">
+        <div class="card-body text-center">
+          <h5 class="card-title">Michael Rodriguez</h5>
+          <p class="card-text">Head Pitmaster</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 team1">
+      <div class="card p-4 shadow border-0 h-100">
+        <img src="img/team-2.jpg" class="img-fluid team" alt="Chef 2">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sarah Johnson</h5>
+          <p class="card-text">Executive Chef</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 team1">
+      <div class="card p-4 shadow border-0 h-100">
+        <img src="img/team-3.jpg" class="img-fluid team" alt="Chef 3">
+        <div class="card-body text-center">
+          <h5 class="card-title">David Chen</h5>
+          <p class="card-text">Sous Chef</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 team1">
+      <div class="card p-4 shadow border-0 h-100">
+        <img src="img/team-4.jpg" class="img-fluid team" alt="Chef 4">
+        <div class="card-body text-center">
+          <h5 class="card-title">Amanda Wilson</h5>
+          <p class="card-text">Grill Specialist</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="Testimonial"class=" about px-3 py-5 text-center text-lg-start mt-0">
+  <h4 class="text-center text fs-2">Testimonial</h4>
+  <h5 class="text-center fs-1 mb-5">Our Clients Say!!!</h5>
+<!-- Bootstrap Carousel with Cards -->
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center gap-4 flex-wrap">
+
+        <!-- Card 1 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start" style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Best BBQ in town! The ribs are incredibly tender and the atmosphere is perfect for family dining. Highly recommend!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 1" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">John Smith</h5>
+              <p class="card-text">Food Blogger</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Amazing service and delicious food! The pulled pork sandwich exceeded my expectations.</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 2" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Emily Davis</h5>
+              <p class="card-text">Marketing Director</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Outstanding BBQ experience! The brisket melts in your mouth and the staff is incredibly friendly and attentive.</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Robert Brown</h5>
+              <p class="card-text">Business Owner</p>
+            </div>
+          </div>
+        </div>
+         
+        <!-- Card 4 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start" style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Perfect place for special occasions! Great food, wonderful ambiance, and excellent customer service. Five stars!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 4" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Lisa Anderson</h5>
+              <p class="card-text">Teacher</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center gap-4 flex-wrap">
+
+        <!-- Card 3 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>The smoky flavors are incredible! You can taste the authentic BBQ techniques in every bite. Absolutely delicious!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 3" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Mark Johnson</h5>
+              <p class="card-text">Chef</p>
+            </div>
+          </div>
+        </div>
+         
+        <!-- Card 4 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Fast delivery and hot food! The online ordering system is easy to use and the food arrives perfectly packaged.</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 4" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Jennifer Wilson</h5>
+              <p class="card-text">Nurse</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start " style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Family-friendly atmosphere with generous portions. The kids love the chicken wings and we love everything else!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 1" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Tom Martinez</h5>
+              <p class="card-text">Engineer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card cardinfo p-3 shadow border-0 h-100 text-start" style="width: 14rem;">
+          <i class="fa fa-quote-left fa-2x mb-3"></i>
+          <p>Consistently excellent food and service. Been coming here for years and they never disappoint. Truly the best!</p>
+          <div class="card-body d-flex justify-content-start p-0 ms-0">
+            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle mb-2" alt="Customer 2" width="50">
+            <div class="ms-3 d-flex flex-column justify-content-start">
+              <h5 class="card-title mb-0">Maria Garcia</h5>
+              <p class="card-text">Accountant</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<footer class="  text-light">
+  <div class="container py-2">
+    <div class="row text-center text-md-start">
+      <!-- About / Logo -->
+      <div class="col-md-4 mb-4">
+        <h4 class="text-warning fw-bold">Restoran</h4>
+        <p class="small">Experience the finest flavors crafted by our master chefs. We serve food with passion and elegance.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, Cairo, Egypt</p>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i>+20 100 123 4567</p>
+        <p class="mb-1"><i class="fas fa-envelope me-2"></i>contact@restoran.com</p>
+      </div>
+
+      <!-- Social / Developer -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Follow Us</h5>
+        <div class="mb-3">
+          <a href="https://github.com/AlaaAtef2003" class="text-light me-3 fs-5" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/alaa-atef-7bb189239" class="text-light fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="small">Developed by <a href="#" class="text-warning text-decoration-underline">Alaa Atef</a></p>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <p class="text-center small mb-0">© 2025 Restoran. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

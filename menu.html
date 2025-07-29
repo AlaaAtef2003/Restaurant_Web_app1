@@ -1,225 +1,216 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viga&display=swap" rel="stylesheet">
-    <title>menu</title>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center ;
-            align-items: center;
-            background-color: rgb(241, 241, 241);
-        }
-    .header{
-       
-        display: flex;
-        flex-direction: row;
-        position: fixed;
-        top:0;
-        left:0;
-        right: 0;
-        height: 60px;
-        margin-top: 0px;
-        background: rgba(226, 227, 228, 0.8); /* Add a white background with some transparency */
-        align-items: center;
-        z-index: 100;
-    }
-    .headeritem{
-        color: brown;
-        flex-shrink: 0;;
-        background-color:  rgba(215, 221, 226, 0.1);
-        border-style: hidden;
-        border-radius: 3px;
-        padding: 20px;
-        margin-left: 40px;
-        margin-right: 30px;
-        cursor: pointer;
-    }
-    .headeritemsearch{
-        margin-left: 100px;
-        background-color:  rgba(215, 221, 226, 0.1);
-        border-style: hidden;
-        border-radius: 3px;
-        padding: 20px;
-        
-    }
-    .headeritemlabal{
-        margin-left:200px;
-        background-color:  rgba(214, 217, 219, 0.1);
-        border-style: solid;
-        border-radius: 3px;
-        padding: 20px;
-        height: 1px;
-        border-width: 1px;
-        background-color: rgb(193, 194, 194);
+  <meta charset="UTF-8">
+  <title>Restoran - BBQ Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    }
-    .headeritem:hover , .headeritemsearch:hover , .headeritemlabal:hover {
-        background-color: brown;
-        color: aliceblue;
-        border-style: hidden;
-    }
-    .headeritemsearch_container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        flex-shrink: 0;; 
-        position: fixed;
-        right: 20px;
-    }
-    .mealcontainer{
-        margin-top: 200px;
-    }
-    .thumb{
-        margin-left: 1x;
-        margin-top: 1px;
-        width: 100%;
-        object-fit: contain;
-        height: 200px;
-        border-radius: 10px;
-    }
-    .body_container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    h1{
-        color: brown;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin-top: 100px;
-        font-size: 40px;
-            font-family: "Viga", serif;
-            font-weight: 400px;
-            font-style: normal;
-            margin-bottom: 20px;
-    }
-    .meals{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 900px;
-        margin-top: 0;;
-        row-gap: 20px;
-        column-gap: 20px;
-    }
-    .container-meals{
-        padding-top: 0;
-        margin-top: 0;
-        box-shadow: 1px 1px 1px 1px rgb(187, 186, 186);
-        border-radius: 10px;
-        background-color: brown;
-    }
-    
-    .dishinfo{
-        display: flex;
-        width: 80%;
-        margin-left: 20px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .name-dish{
-        color: rgb(219, 216, 216);
-    }
-    .price{
-        background-color: rgb(226, 222, 222);
-        color: brown;
-        padding: 5px;
-        border-radius: 5px;
-    }
-    .container-meals:hover{
-        background-color: rgb(206, 118, 118);
-      
-    }
-</style>
-</head> 
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
 <body>
-<div class="header">
-    <div  > 
-        <button class="headeritem" >Menu</button>
-        <button class="headeritem">Lunch Box</button>
-        <button class="headeritem">Platters</button>
-        <button class="headeritem">Special</button>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <i class="fa-solid fa-utensils fs-3 me-2" style="color: var(--yel-color);"></i>
+      <a class="navbar-brand fw-bold fs-3" style="color: var(--yel-color);" href="#">Restoran</a>
     </div>
-    <div class="headeritemsearch_container">
-        <input class="headeritemlabal" type="text">
-        <button class="headeritemsearch">🔍</button>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="Service.html">SERVICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PAGES</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="booking.html">booking</a></li>
+            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="Home" class="hero  d-flex flex-column justify-content-center  align-items-center px-5 py-5 text-center ">
+  <div class="text-white mb-4 mb-lg-0 col-lg-6">
+    <header class="animate__animated animate__fadeInDown display-4 fw-bold">
+    <h1>Food Menu</h1>
+    </header>
+    
+     <nav aria-label="breadcrumb">
+  <ol class="breadcrumb text-center justify-content-center fs-3 text">
+    <li class="breadcrumb-item "><a href="index.html">HOME &nbsp;</a>/</li>
+    <li class="breadcrumb-item "><a href="#">PAGES</a>&nbsp;/</li>
+    <li class="breadcrumb-item  text-white " aria-current="page"> Menu</li>
+  </ol>
+</nav>
+  </div>
+</section>
+
+
+<section id="MENU" class="about px-3 py-5 text-center text-lg-start mt-0">
+  <h4 class="text-center text">Food Menu</h4>
+  <h2 class="fs-1 fw-bold text-center">Most Popular Items</h2>
+
+  <div class="container mt-4">
+    <div class="row gy-4">
+
+      <!-- Menu Item -->
+      <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-1.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Chicken Burger</h5>
+            <span class="text">$15.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Juicy grilled chicken breast with fresh lettuce, tomato, and our special BBQ sauce</p>
+        </div>
+      </div>
+
+      <!-- Copy & Paste below this block for more items -->
+      <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-2.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Chicken Pizza</h5>
+            <span class="text">$18.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Wood-fired pizza topped with smoky BBQ chicken, red onions, and mozzarella cheese</p>
+        </div>
+      </div>
+
+  <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-3.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Grilled Sandwich</h5>
+            <span class="text">$12.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Perfectly grilled sandwich with premium meats, cheese, and fresh vegetables</p>
+        </div>
+      </div>
+  
+      <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-4.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>BBQ Ribs</h5>
+            <span class="text">$22.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Tender fall-off-the-bone ribs slow-cooked for 12 hours with our signature dry rub</p>
+        </div>
     </div>
-    <div class="body_container"> 
-        <h1 >Testy dishes</h1>
+    
+          <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-5.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Smoked Brisket</h5>
+            <span class="text">$24.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Texas-style smoked brisket with perfect bark and juicy interior, served with pickles</p>
+        </div>
         
-        <div class="meals">
-        <div class="container-meals">
-            <div><img class="thumb" src="thumb\fata.jpeg"></div>
-            <div class="dishinfo">
-                <p class="price">250.00EGP</p>
-                <p  class="name-dish">فته مصرى</p>
-             
-            </div>
-             
+           </div>
+        <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-6.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Pulled Pork</h5>
+            <span class="text">$19.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Slow-cooked pulled pork shoulder served with coleslaw and our tangy BBQ sauce</p>
         </div>
-        <div class="container-meals">
-            <div><img class="thumb" src="thumb\mash.jpeg"></div>
-            <div class="dishinfo">
-                <p class="price">150EGP</p>
-                <p  class="name-dish">كفته </p>
-             
-            </div>
-             
+          </div>
+             <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-7.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>BBQ Combo Platter</h5>
+            <span class="text">$28.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">A generous selection of ribs, brisket, and pulled pork with two sides of your choice</p>
         </div>
-        <div class="container-meals">
-            <div><img class="thumb" src="thumb\mo.jpeg"></div>
-            <div class="dishinfo">
-                <p class="price">120.00EGP</p>
-                <p  class="name-dish">ملوخيه</p>
-             
-            </div>
-             
+          </div>
+        <div class="col-lg-6 d-flex align-items-start">
+        <img src="img/menu-8.jpg" class="img-fluid rounded" style="width: 120px;" alt="Menu Image">
+        <div class="ms-3">
+          <div class="d-flex justify-content-between">
+            <h5>Smoked Wings</h5>
+            <span class="text">$16.99</span>
+          </div>
+          <hr class="my-2">
+          <p class="mb-0">Crispy smoked chicken wings tossed in your choice of buffalo, BBQ, or honey garlic sauce</p>
         </div>
-        <div class="container-meals">
-            <div><img class="thumb" src="thumb\kushary-image (1).jpeg"></div>
-            <div class="dishinfo">
-                <p class="price">70.00EGP</p>
-                <p  class="name-dish">كشرى</p>
-             
-            </div>
-             
+          </div>
+</section>
+
+<footer class="  text-light">
+  <div class="container py-2">
+    <div class="row text-center text-md-start">
+      <!-- About / Logo -->
+      <div class="col-md-4 mb-4">
+        <h4 class="text-warning fw-bold">Restoran</h4>
+        <p class="small">Experience the finest flavors crafted by our master chefs. We serve food with passion and elegance.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, Cairo, Egypt</p>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i>+20 100 123 4567</p>
+        <p class="mb-1"><i class="fas fa-envelope me-2"></i>contact@restoran.com</p>
+      </div>
+
+      <!-- Social / Developer -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Follow Us</h5>
+        <div class="mb-3">
+          <a href="https://github.com/AlaaAtef2003" class="text-light me-3 fs-5" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/alaa-atef-7bb189239" class="text-light fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="container-meals">
-            <div><img class="thumb" src="thumb\pizza.jpeg"></div>
-            <div class="dishinfo">
-                <p class="price">130.00EGP</p>
-                <p  class="name-dish">بيتزا</p>
-             
-            </div>
-             
-        </div>
-        <div class="container-meals">
-            <div><img class="thumb" src="thumb\shawerma.jpeg"></div>
-            <div class="dishinfo">
-                <p class="price">180.00EGP</p>
-                <p  class="name-dish">شاورما</p>
-             
-            </div>
-             
-        </div> 
-        </div>
-    
-</div>
-    
-   
-   
+        <p class="small">Developed by <a href="#" class="text-warning text-decoration-underline">Alaa Atef</a></p>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <p class="text-center small mb-0">© 2025 Restoran. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
-
 </html>
