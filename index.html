@@ -19,6 +19,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
 
 </head>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Show the modal
+      const bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+      bookingModal.show();
+
+      // Reset form
+      form.reset();
+    });
+  });
+</script>
+
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg sticky-top">
@@ -29,8 +48,8 @@
     </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: var(--yel-color); border-color: var(--yel-color);">
+      <i class="fas fa-bars" style="color: var(--yel-color); font-size: 1.5rem;"></i>
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -44,7 +63,6 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="booking.html">booking</a></li>
             <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
           </ul>
         </li>
@@ -63,7 +81,9 @@
       Enjoy authentic Texas BBQ with slow-cooked meats,<br>
       bold flavors, and true Southern hospitality.
     </p>
-      <a class="btn  mx-lg-0 mx-auto d-block book w-25"  href="booking.html" style="background-color: var(--yel-color);">BOOK A TABLE</a>
+      <a href="booking.html"  class="btn book d-block w-50 w-lg-25 mx-auto mx-lg-0" style="background-color: var(--yel-color);">
+      BOOK A TABLE
+    </a>    
   </div>
   <div class="col-lg-6 text-center">
     <img src="img/hero.png" alt="Delicious BBQ" class="img-fluid w-75 mt-4 mt-lg-0 img-rotate ">
@@ -149,7 +169,7 @@
       <p class="fs-4">
         We pride ourselves on using only the finest ingredients and time-honored cooking techniques. Every dish is prepared with care by our master chefs who understand that great BBQ takes time, patience, and expertise.
       </p>
-       <button class="btn  mx-lg-0 mx-auto d-block book w-25" style="background-color: var(--yel-color);">READ MORE</button>
+       <a class="btn  mx-lg-0 mx-auto d-block book w-50 w-lg-25" href="About.html" style="background-color: var(--yel-color);">READ MORE</a>
     </div>
   </div>
 </section>
@@ -315,11 +335,29 @@
           </div>
         </div>
 
-        <button type="submit" class="btn book w-50 mt-3 mb-3" style="background-color: var(--yel-color);">BOOK NOW</button>
+        <button type="submit" class="btn book w-50 w-lg-25 mt-3 mb-3" style="background-color: var(--yel-color);">BOOK NOW</button>
         </form>
       </div>
     </div>
   </div>
+  <!-- Booking Confirmation Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel" style="color: black;">Reservation Confirmed</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"  style="color: black;">
+        Thank you for booking with Restoran!<br>
+        Your reservation has been received.
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-warning text-white" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 <section id="team" class="about px-3 py-5 text-center text-lg-start mt-0">
   <h4 class="text-center text fs-2">Team Members</h4>

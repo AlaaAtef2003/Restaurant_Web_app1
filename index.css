@@ -47,7 +47,6 @@ body::before {
   color: var(--yel-color);
 }
 
-/* Dropdown menu */
 .dropdown-menu {
   background-color: var(--yel-color);
 }
@@ -56,9 +55,10 @@ body::before {
   color: var(--yel-color);
 }
 
-.dropdown-item:hover {
-  background-color: var(--yel-color);
-  color:var(--yel-color);
+.dropdown-item:hover ,.nav-item:hover {
+  
+  color: var(--yel-color);
+  
 }
 
 .img-rotate {
@@ -340,3 +340,10 @@ h5{
         color: var(--light-color);
       font-family: "Nunito", sans-serif;
     }
+    .input-group-custom .user-label {
+    padding-top: 0%;   
+
+  display: block;       }
+
+
+  
