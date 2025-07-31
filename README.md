@@ -1,58 +1,60 @@
 # 🍖 Restoran - BBQ Restaurant Web App
 
-A fully responsive and animated restaurant website for a Texas-style BBQ place. Built with modern web technologies to provide a clean, smooth, and engaging user experience.
+A fully responsive and animated restaurant website for a Texas-style BBQ place. Built using modern web technologies to deliver a clean, interactive, and visually appealing user experience.
 
-[🎯 Live Demo](https://alaaatef2003.github.io/Restaurant_Web_app1/) • [💻 GitHub Repo](https://github.com/AlaaAtef2003/Restaurant_Web_app1.git)
+🔗 [Live Demo](https://alaaatef2003.github.io/Restaurant_Web_app1/) • 💻 [GitHub Repository](https://github.com/AlaaAtef2003/Restaurant_Web_app1.git)
 
 ---
 
 ## ✨ Highlights
 
-- 🔥 Eye-catching hero section with animated visuals
-- 📱 Mobile-friendly and fully responsive design
-- 📋 Online reservation form with confirmation modal
-- 🍽️ Detailed food menu with pricing
-- 👨‍🍳 Team section showcasing master chefs
-- 💬 Client testimonials carousel
-- 📞 Contact section and social media integration
+- 🔥 Visually stunning hero section with smooth animations
+- 📱 Mobile-first and fully responsive design
+- 📋 Interactive online reservation form with confirmation
+- 🍽️ Structured food menu with item images and prices
+- 👨‍🍳 Chef profiles with hover effects
+- 💬 Carousel for customer testimonials
+- 📞 Contact section with social media links
 
 ---
 
 ## 🖼️ Preview
 
-### 💡 Hero Section
-![Hero Preview](img/hero1.png)
+### 💡 Home Section
+![Hero Preview](img/hero1.PNG)
 
-### 🍔 Menu Items
-![Menu Preview](img/menu.jpg)
+### 🍔 Menu Section
+![Menu Preview](img/menu.PNG)
 
 ### 📅 Booking Section
-![Booking Preview](img/booking.jpg)
+![Booking Preview](img/booking.PNG)
 
 ---
 
 ## 🚀 Technologies Used
 
-| Tech         | Usage                          |
-|--------------|---------------------------------|
-| HTML5        | Structure & layout              |
-| CSS3         | Custom styling and animation    |
-| Bootstrap 5  | Responsive layout & components |
-| JavaScript   | Form handling, modal, interactivity |
-| Font Awesome | Icons                          |
-| Animate.css  | Entrance animations             |
-| Google Fonts | Typography                     |
+| Technology   | Description                                 |
+|--------------|---------------------------------------------|
+| **HTML5**    | Page structure and semantic layout          |
+| **CSS3**     | Styling, layout design, and animations      |
+| **Bootstrap 5** | Responsive grid system & UI components |
+| **JavaScript** | DOM manipulation and interactivity       |
+| **Font Awesome** | Icon library for rich visuals         |
+| **Animate.css**  | CSS-based entrance animations         |
+| **Google Fonts** | Web typography for clean UI            |
 
 ---
 
-## 📂 How to Use Locally
+## 📂 How to Run the Project Locally
+
+You can run the project on your local machine easily without needing any frameworks or build tools:
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/AlaaAtef2003/Restaurant_Web_app1.git
 
-# 2. Navigate into the folder
+# 2. Navigate to the project directory
 cd Restaurant_Web_app1
 
-# 3. Open with your browser
-Open index.html in any browser
+# 3. Open the website in your browser
+Open the file named index.html in your preferred browser.
